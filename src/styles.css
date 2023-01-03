@@ -1,0 +1,131 @@
+/* ESTILOS GENERALES */
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --buttons-numbers: #C7C7C7;
+    --buttons-numbers-mouse:  #b3b3b3;
+    --text-input-field: #F7F7F7;
+    --light-green: #ACD9B2;
+    --dark-green: #85b18a;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 42px;
+}
+
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%
+}
+
+body{
+    margin: 0;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.left{
+    margin: 1%;
+    width: 24%;
+    background-color: var(--light-green);
+    color: var(--text-input-field);
+    height: 90vh;
+    border-radius: 12px;
+}
+.left .nav-left{
+    height: 25px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--dark-green) ;
+    border-radius: 0 0 10px 10px;
+    padding: 4px;
+}
+.left .nav-left .history{
+    
+    width: 80%;
+    color: #000000;
+    font-size: 20px;
+}
+.left .nav-left .icon-history img{
+    height: 100%;
+    margin-right: 4px;
+}
+
+.right{
+    width: 64%;
+    height: 90vh;
+    margin: 1%;  
+}
+/* DISPLAY DONDE ESTARAN LOS NUMEROS */
+.right .panel-numbers{
+    background-color: var(--light-green);
+    border-radius: 8px;
+    height: 33%;
+    padding: 1% 1%;
+    
+}
+.right .panel-numbers .button-display
+{
+    display: flex;
+    justify-content: flex-end;
+    height: 10%;
+    
+}
+.right .panel-numbers .button-display img{
+    width: 15px;
+}
+.right .panel-numbers .button-display img:hover{
+    cursor: pointer;
+}
+.right .panel-numbers .view{
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.right .panel-numbers .view .operandos{
+    height: 100%;
+    font-size: 104px
+}
+.right .panel-numbers .select-number{
+    height: 15%;
+}
+.right .panel-numbers .select-number .result{
+    height: 100%;
+    font-size: 24px;
+}
+/*BOTONES*/
+.right .buttons{
+    height: 59%;
+    margin: 4% 0;
+    padding: 4px 0;
+}
+
+.right .buttons .fila{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end ;
+    height: 20%;
+}
+.right .buttons .fila .btn-enter{
+    width: 24%;
+}
+
+.right .buttons button {
+    border-radius: 28px;
+    width: 12%;
+    height: 76%;
+    margin: 4px;
+    color: var(--black);
+    font-size: var(--lg);
+}
+button:hover{
+    cursor: pointer;
+    background-color: var(--buttons-numbers-mouse);
+}
